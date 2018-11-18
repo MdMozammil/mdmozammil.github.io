@@ -329,4 +329,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+*.htaccess
+
 # End of https://www.gitignore.io/api/lamp,adobe,linux,macos,windows,laravel,webstorm,phpstorm,jetbrains
