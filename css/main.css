@@ -988,6 +988,8 @@ header .main-nav{
     text-transform: uppercase;
     border-radius: 50px;
     margin-top: 3em;
+    display: inline-block;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {
