@@ -5,10 +5,13 @@ $(function () {
         var scroll = $(window).scrollTop();
 
         if(scroll >= 1){
-            $('.main-nav, #menu-bar').addClass("white").css({"fill": "#000"});
+            $('.main-nav, #menu-bar').addClass("white");
+            $('.main-nav, .toggle-icon, .logo-color').css({"fill": "#fff"});
         }
         else{
             $('.main-nav, #menu-bar').removeClass("white").css({"fill": "#fff"});
+            $('.main-nav, .toggle-icon, .logo-color').css({"fill": "#0347eb"});
+
         }
 
     });

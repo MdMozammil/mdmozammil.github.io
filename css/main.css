@@ -33,6 +33,42 @@
 }
 
 
+
+
+
+@media screen and (max-width: 768px) {
+    section:not(.class) {
+        min-height: 100vh;
+        padding: 11em 1em 1em;
+    }
+
+    .nav-tabs{
+        justify-content: center;
+        border: none;
+        white-space: nowrap;
+        overflow: auto;
+        display: block;
+        position: fixed;
+        background-color: #fff;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: .5em;
+    }
+
+    .nav-tabs .nav-item{
+        display: inline-block;
+    }
+
+    .about-section .nav-tabs li a{
+        border: none;
+    }
+
+}
+
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -86,7 +122,7 @@ header .main-nav{
         width: 100%;
         /*border-bottom: 1px solid #eee;*/
         height: 5em !important;
-        transition: var(--transition);
+        transition: all .4s cubic-bezier(0.4, 0, 1, 1);
         padding: .5rem 1rem !important;
     }
 
@@ -324,7 +360,7 @@ header .main-nav{
 /* Icon 3 */
 
 #nav-icon3 span:nth-child(1) {
-    top: 0px;
+    top: 0;
 }
 
 #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
@@ -366,11 +402,24 @@ header .main-nav{
 
 
 
+@media screen and (max-width: 768px) {
+    .menu-area-nav > ul{
+        display: block;
+        border: none;
+    }
+
+    .menu-area-nav .social-icon{
+        display: flex;
+        margin-top: 2em;
+    }
+}
+
+
 /* ==========================================================================
   Hero Section
    ========================================================================== */
 .hero-section {
-    background: url(../img/hero.jpg) center no-repeat;
+    /*background: url(../img/hero.jpg) center no-repeat;*/
     background-color: var(--brand-color);
     background-size: cover;
     height: 100vh;
@@ -479,13 +528,20 @@ header .main-nav{
 
 .about-section .tab-content{
     text-align: center;
+    height: 500px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .about-section .nav-tabs{
     margin-top: 4em;
-    border-bottom: 3px solid #e9e9ea;
+    /*border-bottom: 3px solid #e9e9ea;*/
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .about-section .nav-tabs li a {
@@ -494,14 +550,38 @@ header .main-nav{
 
 .about-section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
     border: none;
+    border-bottom: 1px solid var(--yellow-color);
+    color: var(--yellow-color);
 }
 
 .about-section .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
-    border: 1px solid transparent;
+    border: none;
+    border-bottom: 1px solid #2b84ee;
 }
 
 
-.about-section .nav-tabs li:hover  li a:before {
+.about-section .nav-tabs .nav-link:hover{
+    border: none;
+    border-bottom: 1px solid #2b84ee;
+}
+
+.nav-tabs{
+    border: none;
+}
+
+.nav-item .nav-link {
+    border: none;
+    border-bottom: 1px solid #999;
+    border-radius: 0;
+}
+
+.nav-item .nav-link{
+    border-bottom: 1px solid #999;
+}
+
+
+
+.nav-tabs li:hover  li a:before {
     content: '';
     border-bottom: 3px solid var(--yellow-color);
     position: absolute;
@@ -515,7 +595,7 @@ header .main-nav{
 
 
 
-.about-section .nav-tabs:hover  li:not(:hover) {
+.nav-tabs:hover  li:not(:hover) {
     text-decoration: none;
     opacity: .3;
     transition: all .5s ease-in-out;
@@ -581,6 +661,7 @@ header .main-nav{
     text-transform: uppercase;
     color: var(--brand-color);
     font-weight: bold;
+    min-width: 360px;
 }
 
 .skills-container .skill-item:before {
@@ -667,6 +748,13 @@ header .main-nav{
     text-transform: capitalize;
 }
 
+@media screen and (max-width: 768px) {
+    .doing-container .doing-item h4{
+        font-size: 1em;
+    }
+
+}
+
 /* ==========================================================================
    Experience Section
    ========================================================================== */
@@ -685,9 +773,7 @@ header .main-nav{
     margin: 3em 0;
 }
 
-.experience-section .nav-tabs{
-    justify-content: center;
-}
+
 
 .experience-section .title{
     color: var(--brand-color);
@@ -697,6 +783,13 @@ header .main-nav{
 
 .experience-section p{
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .experience-section{
+        padding: 1em;
+    }
+
 }
 
 
@@ -719,6 +812,7 @@ header .main-nav{
 
 .contact-card {
     max-width: 450px;
+    width: 100%;
     border: 5px solid #dfdfdf;
     padding: 3em 2em 2em 2em;
     margin: 1em 4em 0 auto;
