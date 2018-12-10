@@ -419,7 +419,7 @@ header .main-nav{
   Hero Section
    ========================================================================== */
 .hero-section {
-    /*background: url(../img/hero.jpg) center no-repeat;*/
+    background: url(../img/hero.jpg) center no-repeat;
     background-color: var(--brand-color);
     background-size: cover;
     height: 100vh;
