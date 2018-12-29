@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
     <link rel="stylesheet" href="css/main.css">
@@ -70,6 +71,7 @@ Header
 
             <div class="mega-menu">
                 <div class="menu-area">
+                    <div class="container">
                     <div class="menu-area-top">
                         <a class="navbar-brand" href="index.html">
                             <svg width="60px" id="Isolation_Mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 572 502.3">
@@ -132,7 +134,7 @@ Header
                     </div>
 
                 </div>
-
+                </div>
             </div>
         </nav>
     </div>
@@ -146,10 +148,10 @@ About Section
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="tab-content experience-container" id="myTabContent">
+                <div class="tab-content experience-container wow fadeIn" id="myTabContent">
 
 
-                    <div class="tab-pane fade" id="sociowash" role="tabpanel" aria-labelledby="sociowash-tab">
+                    <div class="tab-pane fade wow fadeIn" id="sociowash" role="tabpanel" aria-labelledby="sociowash-tab">
                         <svg id="Layer_1" width="100px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.3 59.2">
                             <style>
                                 .rep,.rep2{fill-rule:evenodd;clip-rule:evenodd;fill:#efab00}.st2{fill:#fafafa}
@@ -323,9 +325,24 @@ About Section
     </div>
 </section>
 
+<script src="js/vendor/wow.min.js"></script>
 
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+    wow = new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       true,       // default
+            live:         true        // default
+        }
+    )
+    wow.init();
+
+</script>
 
 
 </body>

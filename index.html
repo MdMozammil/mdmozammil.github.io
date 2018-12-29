@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
     <link rel="stylesheet" href="css/main.css">
@@ -77,7 +78,7 @@ Header
                 </ul>
             </div>
 
-            <div class="mega-menu">
+            <div class="mega-menu slideInLeft">
                 <div class="menu-area">
                     <div class="menu-area-top">
                         <a class="navbar-brand" href="index.html">
@@ -183,6 +184,7 @@ Header
 <script src="js/main.js"></script>
 <!--<script src="js/typed.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script src="js/vendor/wow.min.js"></script>
 
 
 <script>
@@ -198,6 +200,20 @@ Header
         loop: true
     });
 
+
+</script>
+
+<script>
+    wow = new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       true,       // default
+            live:         true        // default
+        }
+    )
+    wow.init();
 </script>
 
 

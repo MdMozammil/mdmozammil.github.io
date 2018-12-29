@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
     <link rel="stylesheet" href="css/main.css">
@@ -150,7 +151,7 @@ Contact Section
             </div>
 
             <div class="col-md-6">
-                <div class="hire-me-container">
+                <div class="hire-me-container wow jackInTheBox">
                     <h1 class="hire-me-title">
                         <span>Let's</span>
                         <span>craft</span>
@@ -170,9 +171,22 @@ Contact Section
 </section>
 
 
+<script src="js/vendor/wow.min.js"></script>
 
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    wow = new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       true,       // default
+            live:         true        // default
+        }
+    )
+    wow.init();
+</script>
 
 </body>
 

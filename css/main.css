@@ -191,9 +191,11 @@ header .main-nav{
 
 .menu-area-top{
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    padding: .5em 1.4em;
+    align-items: center;
+    width: 100%;
+    height: 7.8em;
+    padding: 0;
 }
 
 .mega-menu .menu-area-nav{
@@ -221,7 +223,7 @@ header .main-nav{
     justify-content: center;
     align-items: center;
     padding: 0 2em;
-    line-height: 4em;
+    line-height: 3em;
 }
 
 
@@ -245,13 +247,11 @@ header .main-nav{
 
 .mega-menu ul li:hover  a:before {
     content: '';
-    border-bottom: 3px solid var(--yellow-color);
+    border-bottom: 2px solid var(--yellow-color);
     position: absolute;
-    bottom: -3px;
+    bottom: -1px;
     left: 0;
     z-index: 1;
-    height: 2px;
-    background-color: #000;
     width: 100%;
 }
 
@@ -570,19 +570,19 @@ header .main-nav{
 
 .about-section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
     border: none;
-    border-bottom: 1px solid var(--yellow-color);
+    border-bottom: 2px solid var(--yellow-color);
     color: var(--yellow-color);
 }
 
 .about-section .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
     border: none;
-    border-bottom: 1px solid #2b84ee;
+    border-bottom: 2px solid #2b84ee;
 }
 
 
 .about-section .nav-tabs .nav-link:hover{
     border: none;
-    border-bottom: 1px solid #2b84ee;
+    border-bottom: 2px solid #2b84ee;
 }
 
 .nav-tabs{
@@ -593,7 +593,7 @@ header .main-nav{
 
 .nav-item .nav-link {
     border: none;
-    border-bottom: 1px solid #e9e9ea;
+    border-bottom: 2px solid #e9e9ea;
     border-radius: 0;
 }
 
@@ -825,6 +825,11 @@ header .main-nav{
 .experience-container{
     text-align: center;
     margin: 3em 0;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -837,6 +842,7 @@ header .main-nav{
 
 .experience-section p{
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 1024px) {
