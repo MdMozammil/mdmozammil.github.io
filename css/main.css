@@ -85,7 +85,7 @@ body {
     color: #565a5c;
     font-size: 1em;
     line-height: 1.6em;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 header{
@@ -204,7 +204,7 @@ header .main-nav ul:nth-of-type(2){
 .mega-menu .menu-area{
     width: 100%;
     padding: 0 1em;
-    max-width: 1250px;
+    /*max-width: 1250px;*/
     margin: 0 auto;
 }
 
@@ -317,7 +317,7 @@ header .main-nav ul:nth-of-type(2){
 }
 
 .social-icon li {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     border: 1px solid #a5befc;
