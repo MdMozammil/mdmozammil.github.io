@@ -57,6 +57,6 @@ document.onreadystatechange = function () {
         setTimeout(function(){
             document.getElementById('interactive');
             document.getElementById('loader').style.visibility="hidden";
-        },1000);
+        },3000);
     }
 };
