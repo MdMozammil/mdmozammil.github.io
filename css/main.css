@@ -22,18 +22,17 @@
     z-index: 1;
     top: 50%;
     left: 50%;
-    width: 150px;
+    width: 80px;
     transform: translate(-50%, -50%)
 }
 
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 1250px;
+        margin: 0 auto;
+    }
 
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
 }
-
-
-
 
 
 @media screen and (max-width: 768px) {
@@ -65,6 +64,10 @@
         border: none;
     }
 
+    nav ul{
+        padding: 0;
+    }
+
 }
 
 
@@ -82,7 +85,7 @@ body {
     color: #565a5c;
     font-size: 1em;
     line-height: 1.6em;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 header{
@@ -92,10 +95,7 @@ header{
     width: 100%;
 }
 
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
-}
+
 
 header .main-nav{
     display: flex;
@@ -106,11 +106,29 @@ header .main-nav{
     padding: 0;
 }
 
+header .main-nav ul:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+
 .menu-toggle{
     margin-top: -2em;
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.main-nav ul li:last-child{
+    margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -148,6 +166,11 @@ header .main-nav{
         padding: .5em 1em;
     }
 
+    .menu-area-nav ul:nth-of-type(1) li{
+        margin-right: 20px;
+    }
+
+
 }
 
 
@@ -163,12 +186,10 @@ header .main-nav{
     border: 10px solid var(--brand-color);
     height: 100%;
     transition: all .5s cubic-bezier(0.14, 0.65, 0.53, 1.02);
-    /*opacity: 0;*/
     visibility: hidden;
     transform: translateX(-100%);
     transform-style: preserve-3d;
     will-change: transform;
-    /*overflow-y: auto;*/
     transform-origin: left;
     display: flex;
     justify-content: inherit;
@@ -176,13 +197,15 @@ header .main-nav{
 
 .mega-menu.open{
     transform: translateX(0);
-    /*opacity: 1;*/
     visibility: visible;
     left: 0;
 }
 
 .mega-menu .menu-area{
     width: 100%;
+    padding: 0 1em;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 .mega-menu ul{
@@ -301,7 +324,6 @@ header .main-nav{
     width: 35px;
     height: 35px;
     transition: var(--transition);
-    border-right: 0;
 }
 
 .social-icon li:last-child{
@@ -413,10 +435,6 @@ header .main-nav{
 }
 
 /* Icon 4 */
-
-
-
-
 @media screen and (max-width: 768px) {
     .menu-area-nav > ul{
         display: block;
@@ -426,6 +444,29 @@ header .main-nav{
     .menu-area-nav .social-icon{
         display: flex;
         margin-top: 2em;
+    }
+
+    .svg-fill{
+        fill: #fff;
+    }
+
+    .white.toggle-icon{
+        fill: #fff;
+    }
+
+    .social-icon li{
+        border-right: 1px solid #a5befc;
+    }
+
+    .mega-menu .menu-area{
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .mega-menu .menu-area-nav {
+        height: calc(100vh - 300px);
     }
 }
 
@@ -1041,5 +1082,82 @@ header .main-nav{
     .hire-me-container .hire-btn{
         margin-top: .5em;
         padding: .6em 1.5em;
+    }
+}
+
+
+/* ==========================================================================
+   Portfolio  Section
+   ========================================================================== */
+.portfolio-section{
+    margin: 8em 0 1em 0;
+}
+
+.see-all{
+    padding: .6em 3em;
+    text-transform: uppercase;
+    color: var(--yellow-color);
+    border: 1px solid var(--yellow-color);
+    text-decoration: none;
+    border-radius: 40px;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    margin: 1em 0;
+}
+
+.see-all:hover{
+    text-decoration: none;
+    border: 1px solid var(--brand-color);
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-section {
+        margin: 0 0 1em 0;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .portfolio-section .container{
+        max-width: 990px;
+        margin: 0 auto;
+    }
+}
+
+
+.layout-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
 }

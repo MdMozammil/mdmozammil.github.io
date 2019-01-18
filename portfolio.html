@@ -25,6 +25,15 @@
 
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <meta name="theme-color" content="#0347eb">
+
+
+    <style>
+
+        body {
+            border: none;
+        }
+    </style>
 
 
 </head>
@@ -35,7 +44,7 @@
 <![endif]-->
 
 <div id="loader">
-    <img src="img/logo.png" class="load" width="150">
+    <img src="img/loader.gif" class="load">
 </div>
 
 <!--==============================================================
@@ -149,43 +158,88 @@ Header
     </div>
 </header>
 
-
 <!--==============================================================
-Contact Section
+ Hero Section
 ==================================================================-->
-
-<section class="hire-me-section">
+<section class="portfolio-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+         <div class="col-lg-12">
+             <!-- Photo Grid -->
+             <div class="layout-container">
+                 <div class="column">
+                     <a target="_blank" href="https://www.behance.net/gallery/72531333/Avon-Beauty-Buzz">
+                         <img src="img/portfolio/beauty-buzz.jpg" style="width:100%">
+                     </a>
 
-            </div>
+                     <a target="_blank" href="https://www.behance.net/gallery/22855629/Mango-Brand-">
+                         <img src="img/portfolio/mango.jpg" style="width:100%">
+                     </a>
 
-            <div class="col-md-6">
-                <div class="hire-me-container wow jackInTheBox">
-                    <h1 class="hire-me-title">
-                        <span>Let's</span>
-                        <span>craft</span>
-                        <span>brilliance</span>
-                        <span>together!</span>
+                 </div>
 
-                    </h1>
+                 <div class="column">
+                     <a target="_blank" href="https://www.behance.net/gallery/70074273/Music-India-Summit">
+                         <img src="img/portfolio/musiconcepts.jpg" style="width:100%">
+                     </a>
 
-                    <a href="contact.html" class="hire-btn">Get in Touch</a>
+                     <a target="_blank" href="https://www.behance.net/gallery/22003215/Bata-Brand-Page-For-E-commerce-">
+                         <img src="img/portfolio/bata.jpg" style="width:100%">
+                     </a>
 
-                </div>
+                 </div>
+                 <div class="column">
+                     <a target="_blank" href="https://www.behance.net/gallery/23307769/Johnplayers">
+                         <img src="img/portfolio/john-players.jpg" style="width:100%">
+                     </a>
 
+                     <a target="_blank" href="https://www.behance.net/gallery/68869385/httpswwwtinderuin">
+                         <img src="img/portfolio/tinder.jpg" style="width:100%">
+                     </a>
 
+                 </div>
+                 <div class="column">
+                     <a target="_blank" href="https://www.behance.net/gallery/67295347/hazoorilallegacy-Websites-Design">
+                         <img src="img/portfolio/hazoorilal.jpg" style="width:100%">
+                     </a>
+
+                     <a target="_blank" href="https://www.behance.net/gallery/72529409/Panasonic-x1-and-x1-pro-features-card">
+                         <img src="img/portfolio/panasonic.jpg" style="width:100%">
+                     </a>
+                 </div>
+             </div>
+         </div>
+            <div class="col-lg-12 text-right">
+                <a class="see-all" target="_blank" href="https://www.behance.net/MOZAMMIL">See all projects</a>
             </div>
         </div>
     </div>
 </section>
 
 
-<script src="js/vendor/wow.min.js"></script>
-
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<!--<script src="js/typed.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script src="js/vendor/wow.min.js"></script>
+
+
+<script>
+    var typed = new Typed('#typed', {
+        strings: [
+            "multifaceted",
+            "mindful",
+            "passionate",
+            "resourceful",
+            "practical",
+        ],
+        typeSpeed: 100,
+        loop: true
+    });
+
+
+</script>
+
 <script>
     wow = new WOW(
         {
@@ -198,6 +252,7 @@ Contact Section
     )
     wow.init();
 </script>
+
 
 </body>
 

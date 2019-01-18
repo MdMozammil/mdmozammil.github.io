@@ -6,17 +6,18 @@ $(function () {
 
         if(scroll >= 1){
             $('.main-nav, #menu-bar').addClass("white");
-            $('.main-nav, .toggle-icon, .logo-color').css({"fill": "#fff"});
+            $('.main-nav, .toggle-icon, .logo-color').addClass('svg-fill');
         }
         else{
-            $('.main-nav, #menu-bar').removeClass("white").css({"fill": "#fff"});
-            $('.main-nav, .toggle-icon, .logo-color').css({"fill": "#0347eb"});
+            $('.main-nav, #menu-bar').removeClass("white");
+            $('.main-nav, .toggle-icon, .logo-color').removeClass('svg-fill');
 
         }
 
     });
-
 });
+
+
 
 
 //Mega menu//
