@@ -993,6 +993,13 @@ header .main-nav ul:nth-of-type(2){
     border: 1px solid transparent;
 }
 
+@media screen and (max-width: 768px) {
+    .contact-section{
+        min-height: 100% !important;
+        height: 100%;
+        padding: 0em 0 !important;
+    }
+}
 
 /* ==========================================================================
    Hire me  Section
