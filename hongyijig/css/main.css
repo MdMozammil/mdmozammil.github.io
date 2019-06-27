@@ -47,11 +47,13 @@ body{
     display: inline-block;
     text-decoration: none;
     border: 1px solid var(--brand-color);
+    transition: var(--transition);
 }
 
 .honey-btn:hover{
     text-decoration: none;
-    color: #333333;
+    color: #fff;
+    background-color: var(--secondary-color);
 }
 
 
@@ -182,6 +184,10 @@ header{
     font-size: 1em;
     line-height: 1.6em;
     font-weight: bold;
+}
+
+.mega-menu .full-menu > li a:hover{
+    color: var(--secondary-color);
 }
 
 .mega-menu h3{
@@ -688,9 +694,11 @@ header{
 
 .support-title{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 4em;
+    max-width: 420px;
+    margin-left: auto;
 }
 
 .support-title svg{
@@ -806,6 +814,13 @@ header{
 .stats li figure figcaption h4 span{
     font-size: .5em;
     font-weight: 100;
+}
+
+.stats li span{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-indent: 5px;
+    display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
@@ -924,7 +939,7 @@ header{
 
 
 .clients-list li:hover{
-    box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.09);
 }
 
 
@@ -1179,7 +1194,7 @@ header{
 .testimonials .nav-tabs .nav-item{
     width: 190px !important;
     font-size: .8em;
-    margin: 1em auto;
+    /*margin: 1em auto;*/
 }
 
 .testimonials .nav-tabs{
@@ -1245,6 +1260,12 @@ header{
 @media screen and (max-width: 768px) {
     .testimonials {
         padding: 4em 0em;
+    }
+
+    .testimonials .nav-tabs .nav-item {
+        width: 190px !important;
+        font-size: .8em;
+        margin: 1em auto;
     }
 
 }
@@ -1356,8 +1377,8 @@ header{
 }
 
 .awards .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
-    color: #333333;
-    background-color: #fff;
+    color: var(--brand-color);
+    background-color: transparent;
     border: 2px solid var(--brand-color);
     border-radius: 0;
     text-transform: uppercase;
@@ -1679,9 +1700,13 @@ footer ul li a[href="mailto:info@hongyijig.com"]{
     }
 }
 
-.b-b-0{
-    border-bottom: 0!important;
+@media screen and (max-width: 768px) {
+    .b-b-0{
+        border-bottom: 0!important;
+    }
 }
+
+
 
 @media (max-width: 767px) {
     .hidden-xs {
