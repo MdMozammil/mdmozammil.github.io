@@ -188,6 +188,7 @@ header{
 
 .mega-menu .full-menu > li a:hover{
     color: var(--secondary-color);
+    font-size: 1.2em;
 }
 
 .mega-menu h3{
@@ -542,7 +543,7 @@ header{
 
 .title{
     color: var(--brand-color);
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .side-text h3 {
@@ -688,8 +689,9 @@ header{
 }
 
 .services .title{
-    color: #fff;
+    color: #cac9c9;
     margin: 0;
+    line-height: 30px;
 }
 
 .support-title{
@@ -856,7 +858,11 @@ header{
 }
 
 .position-cta{
-    padding: 7em 0 0 7em;
+    padding: 7em 0 0 5em;
+}
+
+.position-cta .title{
+    line-height: 45px;
 }
 
 .cta .title span:nth-of-type(2),
@@ -1293,7 +1299,12 @@ header{
 
 .position{
     margin-left: 13em;
-    max-width: 450px;
+    max-width: 520px;
+}
+
+.position h3{
+    text-transform: uppercase;
+
 }
 
 .awards-list li p:nth-of-type(1){
