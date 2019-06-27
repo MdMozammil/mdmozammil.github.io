@@ -1039,6 +1039,11 @@ header .main-nav ul:nth-of-type(2){
     border: 1px solid transparent;
 }
 
+
+.contact-section img{
+    margin-top: 5em;
+}
+
 @media screen and (max-width: 768px) {
     .contact-section{
         min-height: 100% !important;
