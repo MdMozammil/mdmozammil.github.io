@@ -249,8 +249,6 @@ header{
         visibility: visible;
     }
 
-
-
 }
 
 
@@ -367,6 +365,7 @@ header{
 @media screen and (max-width: 768px) {
     .mega-menu{
         width: 100%;
+        padding-top: 5em;
     }
 }
 
@@ -377,7 +376,7 @@ header{
     .main-nav{
         height: initial;
         line-height: initial;
-        padding: 1.7em 1em;
+        padding: 0.7em 1em;
     }
 
     .main-nav li:not(:last-child) {
@@ -408,6 +407,10 @@ header{
 
     .mega-menu .menu-toggle {
         right: 20px;
+    }
+
+    .white .logo {
+        width: 130px;
     }
 
 }
@@ -491,11 +494,15 @@ header{
 
 @media screen and (max-width: 768px) {
     .hero-text h1 {
-        font-size: 6em;
+        font-size: 5.5em;
     }
 
     .hero-text {
         left: 20px;
+    }
+
+    .hero-text p {
+        font-size: 1em;
     }
 
 }
@@ -624,6 +631,7 @@ header{
 
     .placeholder{
         padding: 0;
+        object-fit: cover;
     }
 
 }
@@ -713,8 +721,14 @@ header{
     font-size: 1.1em;
     color: #fff;
     text-transform: uppercase;
-    text-indent: -35px;
-    line-height: 5px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support-title h4 span{
+    margin-left: 7px;
 }
 
 @media screen and (max-width: 768px) {
@@ -733,6 +747,8 @@ header{
         font-size: .85em;
     }
 
+
+
     .services .services-list {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -750,9 +766,9 @@ header{
         padding: 1em;
     }
 
-    .services .services-list li figure h3{
-        height: initial;
-    }
+    /*.services .services-list li figure h3{*/
+        /*height: initial;*/
+    /*}*/
 
 }
 
@@ -973,9 +989,9 @@ header{
 }
 
 .clients-list-desktop .clients-list li img {
-    /*filter: opacity(1);*/
+    /*filter: opacity(1); *!*/
     transition: var(--transition);
-    width: 110px;
+    width: 130px
 }
 
 /*.clients-list li:hover img{*/
@@ -984,8 +1000,8 @@ header{
 
 
 .clients .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
-    width: 50px;
-    height: 44px;
+    width: 100px;
+    height: 50px;
     /* line-height: 44px; */
     background-color: #fff;
     font-size: 1.8em;
@@ -999,12 +1015,11 @@ header{
 }
 
 .clients .owl-carousel .owl-nav button:hover{
-    width: 50px;
-    height: 44px;
+    width: 100px;
+    height: 50px;
     /*line-height: 44px;*/
     background-color: #fff;
     font-size: 1.8em;
-    color: var(--green-color);
     border-radius: 3px;
 }
 
@@ -1032,12 +1047,13 @@ header{
 
    .clients .position{
        max-width: 100%;
-       margin: 0 1em;
+       margin: 0;
     }
 
    .clients .title{
        margin-left: 0;
        margin-top: 0;
+       font-size: 2.5em;
    }
 
     .clients-list{
@@ -1053,7 +1069,7 @@ header{
 
     .clients {
         height: auto;
-        padding: 3em 0;
+        padding: 1em 0;
     }
 }
 
@@ -1237,12 +1253,19 @@ header{
 
 .slider-cont{
     background-color: var(--brand-color);
-    border: 0;
+    border: 1px solid transparent;
     max-width: 100px;
     height: 50px;
     line-height: 50px;
     width: 100px;
     /* padding: 1em 2em; */
+    transition: var(--transition);
+}
+
+.slider-cont:hover{
+    background-color: transparent;
+    border: 1px solid var(--brand-color);
+
 }
 
 .slider-cont:focus{
@@ -1251,7 +1274,7 @@ header{
 
 
 .mobile-client-slider figure img{
-    height: 300px;
+    height: 220px;
     object-fit: cover;
     object-position: top;
 }
@@ -1269,9 +1292,13 @@ header{
     }
 
     .testimonials .nav-tabs .nav-item {
-        width: 190px !important;
+        width: 165px !important;
         font-size: .8em;
         margin: 1em auto;
+    }
+
+    .mobile-client-slider figcaption {
+        padding: 1em 0;
     }
 
 }
@@ -1378,7 +1405,7 @@ header{
     border: 1px solid transparent;
     border-radius: 0;
     text-transform: uppercase;
-    width: 183px;
+    width: 165px;
     max-width: 100%;
     display: inline-block;
     text-align: center;
@@ -1390,10 +1417,10 @@ header{
 .awards .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
     color: var(--brand-color);
     background-color: transparent;
-    border: 2px solid var(--brand-color);
+    border: 1px solid var(--brand-color);
     border-radius: 0;
     text-transform: uppercase;
-    width: 183px;
+    width: 165px;
     max-width: 100%;
     display: inline-block;
     text-align: center;
@@ -1403,7 +1430,7 @@ header{
 }
 
 .awards .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
-    border: 2px solid var(--brand-color);
+    border: 1px solid var(--brand-color);
 }
 
 .tab-title{
@@ -1423,6 +1450,7 @@ header{
 
     .awards .title{
         margin: 0;
+        font-size: 2.5em;
     }
 
     .awards-list {
@@ -1455,6 +1483,10 @@ header{
         justify-content: flex-start;
     }
 
+    .events-list li figure figcaption {
+        padding: 1em;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -1472,14 +1504,14 @@ header{
    ========================================================================== */
 
 footer{
-    background: url('../img/footer-bg.jpg') center no-repeat;
+    background: url(../img/footer-bg.jpg) center no-repeat;
     background-size: cover;
     width: 100%;
     height: 577px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 footer h3{
@@ -1585,6 +1617,55 @@ footer ul li a[href="mailto:info@hongyijig.com"]{
     padding-left: 4em;
 }
 
+
+.footer-container #accordion .card {
+    word-wrap: break-word;
+    background-color: #1f1f1f;
+    color: #fff;
+    border-radius: 0;
+}
+
+.footer-container #accordion .btn-link {
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer-container #accordion .btn-link.focus, .btn-link:focus {
+    text-decoration: none;
+}
+
+.footer-container #accordion .card-header {
+    padding: .5em 0;
+}
+
+.footer-container #accordion .btn-link:after {
+    content: "-";
+    position: relative;
+    float: right;
+    margin-left: 19px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    -webkit-animation: minus 0.8s;
+    animation: minus 0.8s;
+    line-height: 25px;
+    display: block;
+}
+
+.footer-container #accordion .btn-link.collapsed:after {
+    content: "+";
+    -webkit-animation: plus 0.8s;
+    animation: plus 0.8s;
+}
+
+
 @media screen and (max-width: 768px) {
      .social-icon {
         margin-top: 1em;
@@ -1601,7 +1682,7 @@ footer ul li a[href="mailto:info@hongyijig.com"]{
 
     footer {
         height: 100%;
-        padding: 2em;
+        padding: 1em 0;
     }
 
     .footer-content.right,
@@ -1618,15 +1699,18 @@ footer ul li a[href="mailto:info@hongyijig.com"]{
 
 
 @media screen and (max-width: 600px) {
-
     .social-icon {
         margin-top: 2em;
         justify-content: center;
     }
-
-
 }
 
+
+hr{
+    margin: 10px 0;
+    border-top: 2px solid #FF9800;
+    width: 60px;
+}
 
 
 /* ==========================================================================
@@ -1691,6 +1775,29 @@ footer ul li a[href="mailto:info@hongyijig.com"]{
     }
 }
 
+
+/*Iphone 5s and small devices*/
+
+@media screen and (max-width: 320px) {
+    .testimonials .nav-tabs .nav-item {
+        width: 145px !important;
+        font-size: .7em;
+        margin: 1em auto;
+    }
+
+    .awards .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+        width: 145px !important;
+        font-size: .7em;
+        margin: 1em auto;
+    }
+
+    .awards .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+        width: 145px !important;
+        font-size: .7em;
+        margin: 1em auto;
+    }
+
+}
 
 /*Helper classes*/
 .white-c{
