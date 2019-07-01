@@ -9,7 +9,7 @@ body .about-page{
 
 .about-page header {
     background: url(../img/about-bg.jpg) center no-repeat;
-    height: 700px;
+    height: 899px;
     background-size: cover;
     display: flex;
     justify-content: flex-end;
@@ -56,5 +56,114 @@ body .about-page{
     background: url(../img/angle-down.png) center no-repeat;
     background-position: center right;
     text-transform: uppercase;
+
+}
+
+.about-page .team-list{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 0;
+    grid-gap: 5px;
+}
+
+.about-page .team-list li{
+    list-style: none;
+}
+
+.about-page .team-list figure img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.about-page .team-list figure figcaption{
+    background-color: #343434;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+.about-page .team-list figure figcaption h3{
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.about-page .team-list figure figcaption p{
+    opacity: .6;
+}
+
+
+.about-page .org-chart .title{
+    margin-top: 1em;
+}
+
+.about-page .team-block{
+    margin-top: 2em;
+}
+
+.about-page .timeline-section{
+    padding: 4em 0;
+}
+
+.about-page .timeline-section .title-block{
+    text-align: left;
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.about-page .timeline-section .title-block .title{
+    margin-bottom: 0;
+}
+
+.about-page .timeline-section .title-block p{
+    color: #cac9c9;
+    font-size: 1.4em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.about-page .timeline-section .title span{
+    color: #cac9c9;
+    font-weight: 600;
+}
+
+.about-page .timeline-section .title span:nth-of-type(2){
+    font-weight: 100;
+    color: var(--brand-color);
+}
+
+@media screen and (max-width: 768px) {
+    .about-page .team-list{
+        display: block;
+    }
+
+    .about-page .timeline-section .title-block .title {
+        margin: 0;
+        font-size: 2.3em;
+    }
+
+    .about-page .org-chart .title {
+        margin: 0;
+        font-size: 2.1em;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .about-page .org-chart .title {
+        margin: 0;
+        font-size: 1.7em;
+    }
+
+    .about-page header {
+        padding: 10em 0 0 0;
+    }
+
+    .about-page .timeline-section .title-block .title {
+        margin: 0;
+        font-size: 1.7em;
+    }
 
 }

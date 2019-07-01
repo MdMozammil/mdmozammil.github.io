@@ -395,3 +395,20 @@ function labnolIframe() {
     iframe.setAttribute("allowfullscreen", "1");
     this.parentNode.replaceChild(iframe, this);
 }
+
+
+//
+// $(document).ready(function () {
+//
+//
+//     if ($(window).width() < 797) {
+//           $(function() {
+//             $().timelinr({
+//                 orientation: 'horizontal',
+//                 // value: horizontal | vertical, default to horizontal
+//
+//             });
+//         })
+//     }
+//
+// });

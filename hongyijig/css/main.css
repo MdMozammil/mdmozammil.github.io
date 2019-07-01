@@ -727,6 +727,15 @@ header{
     align-items: center;
 }
 
+.support-title h4 a{
+    color: #fff;
+    display: inherit;
+}
+
+.support-title h4 a:hover{
+    text-decoration: none;
+}
+
 .support-title h4 span{
     margin-left: 7px;
 }
@@ -1323,7 +1332,8 @@ header{
     list-style: none;
     text-align: center;
     border: 2px solid #d7d7d7;
-    padding: 3em  1em;
+    padding: 3em 1em;
+    height: 250px;
 }
 
 .position{
