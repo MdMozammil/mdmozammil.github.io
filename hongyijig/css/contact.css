@@ -1,0 +1,168 @@
+
+body{
+    padding-top: 0;
+}
+
+.contact-page header {
+    background: url(../img/about-bg.jpg) center no-repeat;
+    height: 525px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    background-position: top;
+}
+
+.contact-page .hero-text{
+    position: initial;
+    transform: initial;
+}
+
+.contact-page .hero-text h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.contact-page .hero-text h1 span{
+    /*color: var(--brand-color);*/
+    font-weight: 100;
+}
+
+.contact-page .hero-text p{
+    color: #cacaca;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.6em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.contact-form{
+    background-color: #7a7a7a;
+}
+
+.contact-form  .contact-card ul{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.contact-form form h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: left;
+    color: #666666;
+    margin: 0 0 1em 0;
+}
+
+.contact-form  .contact-card ul a,
+.contact-form  .contact-card ul p
+{
+    color: #666666;
+    font-weight: bold;
+}
+
+
+.contact-form  .contact-card ul a:hover{
+    text-decoration: none;
+}
+
+.contact-form  .contact-card ul li{
+    background-color: #faf9f8;
+    list-style: none;
+    padding: 4em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-card ul input,
+.contact-card ul textarea {
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    border-radius: 0;
+}
+
+.contact-card ul .input-group-text {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    border-radius: 0;
+    padding-left: 0;
+}
+.contact-card ul .single-card .form-group{
+    margin-bottom: .5em;
+}
+
+.contact-card ul .input-group {
+    padding: 1em 0 0 0;
+}
+
+.contact-card ul .input-group-text .input-icon {
+    width: 20px;
+}
+
+.contact-card ul .form-control {
+    background-color: #faf9f8;
+}
+
+.contact-card .honey-btn{
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 1em 4em;
+    border-radius: 5px;
+}
+
+
+#locationselector{
+    -webkit-appearance: none;
+    padding: 1em 4em;
+    background-color: transparent;
+    border: 1px solid #c9c9c9;
+    border-radius: 0;
+    color: #c9c9c9;
+    margin: 1em 0;
+    position: relative;
+    background: url(../img/angle-down.png) center no-repeat;
+    background-position: center right;
+    text-transform: uppercase;
+
+}
+
+
+.output p{
+    color: #fff;
+    font-weight: 500;
+}
+
+.output p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#locationselector:focus{
+    outline: none;
+}
+
+.location{
+    display: none;
+    margin-top: 2em;
+}
+
+.location:nth-of-type(1){
+    display: block;
+    margin-top: 2em;
+
+}

@@ -1,0 +1,60 @@
+
+body{
+    padding-top: 0;
+}
+
+body .about-page{
+    background-color: #575757;
+}
+
+.about-page header {
+    background: url(../img/about-bg.jpg) center no-repeat;
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.about-page .hero-text{
+    position: initial;
+    transform: initial;
+}
+
+.about-page .hero-text h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: .7em;
+}
+
+.about-page .hero-text h1 span{
+    color: var(--brand-color);
+    font-weight: 100;
+}
+
+.about-page .hero-text p{
+    color: #cacaca;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.6em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+#locationselector{
+    -webkit-appearance: none;
+    padding: 1em 4em;
+    background-color: transparent;
+    border: 1px solid var(--brand-color);
+    border-radius: 0;
+    color: #fff;
+    margin: 1em 0;
+    position: relative;
+    background: url(../img/angle-down.png) center no-repeat;
+    background-position: center right;
+    text-transform: uppercase;
+
+}

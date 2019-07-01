@@ -1,0 +1,186 @@
+
+body{
+    padding-top: 0;
+}
+
+body .career-page{
+    background-color: #565656;
+}
+
+.career-page header {
+    background: url('../img/career-bg.jpg') center no-repeat;
+    height: 870px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: top;
+}
+
+.career-page .hero-text{
+    position: initial;
+    transform: initial;
+}
+
+.career-page .hero-text h3{
+    color: var(--brand-color);
+    text-transform: uppercase;
+}
+
+.career-page .hero-text h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.career-page .hero-text h1 span{
+    /*color: var(--brand-color);*/
+    font-weight: 100;
+}
+
+.career-page .hero-text p{
+    color: #cacaca;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.6em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.career-page .hero-text a{
+    background: initial;
+    border: none;
+    padding: initial;
+    text-transform: initial;
+    color: var(--brand-color);
+}
+
+#locationselector{
+    -webkit-appearance: none;
+    padding: 1em 4em;
+    background-color: transparent;
+    border: 1px solid var(--brand-color);
+    border-radius: 0;
+    color: #fff;
+    margin: 1em 0;
+    position: relative;
+    background: url(../img/angle-down.png) center no-repeat;
+    background-position: center right;
+    text-transform: uppercase;
+
+}
+
+
+.output p{
+    color: #fff;
+    font-weight: 500;
+}
+
+.output p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#locationselector:focus{
+    outline: none;
+}
+
+.location{
+    display: none;
+    margin-top: 2em;
+}
+
+.location:nth-of-type(1){
+    display: block;
+    margin-top: 2em;
+
+}
+
+
+.career-page  .btn-link:after {
+    content: "-";
+    position: relative;
+    float: right;
+    margin-left: 19px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--brand-color);
+    -webkit-animation: minus 0.8s;
+    animation: minus 0.8s;
+    line-height: 25px;
+    display: block;
+}
+
+.career-page .career-block  .btn-link.collapsed:after {
+    content: "+";
+    -webkit-animation: plus 0.8s;
+    animation: plus 0.8s;
+}
+
+.career-page .career-block .btn-link{
+    color: #3c3c3c;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+}
+.career-page .career-block .card-header{
+    border-radius: 0;
+    background: transparent;
+}
+
+.career-page .career-block .card{
+    border-radius: 0;
+    border: none;
+    margin: .3em 0;
+}
+
+.career-page .career-block .card-body h3{
+    color: var(--brand-color);
+    margin: .5em;
+}
+
+.career-page .career-block .card-body ul{
+    padding: 0 2em;
+}
+
+.career-page .career-block .card-body a{
+    background-color: var(--brand-color);
+    color: #fff;
+}
+
+.career-page .open-positions{
+    margin-top: -22em;
+    padding-bottom: 4em;
+}
+
+
+@media screen and (max-width: 768px) {
+    .career-page .open-positions {
+        margin-top: -18em;
+        padding-bottom: 1em;
+    }
+
+    .career-page .career-block .card-header {
+        padding: .5em;
+    }
+
+    .career-page .dropdown{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .career-page .btn-link:after {
+        content: "-";
+        line-height: 0;
+    }
+
+    .career-page .career-block .card-header {
+        padding: .3em;
+
+    }
+}
