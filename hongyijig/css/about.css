@@ -83,6 +83,8 @@ body .about-page{
     color: #fff;
     padding: 1.5em 0;
     text-align: center;
+    height: 140px;
+    overflow: hidden;
 }
 
 .about-page .team-list figure figcaption h3{
@@ -134,6 +136,12 @@ body .about-page{
     color: var(--brand-color);
 }
 
+@media screen and (max-width: 1024px) {
+    .about-page .team-list {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .about-page .team-list{
         display: block;
@@ -148,6 +156,27 @@ body .about-page{
         margin: 0;
         font-size: 2.1em;
     }
+
+    .about-page header {
+        height: 100%;
+        /* background-size: cover; */
+        display: flex;
+        /* justify-content: flex-end; */
+        /* align-items: flex-end; */
+        flex-direction: column;
+        padding: 20em 0 2em 0;
+        background-position: top;
+    }
+
+    .about-page .team-list figure figcaption{
+        padding: 1em;
+    }
+
+    #locationselector{
+        width: 100%;
+        padding: 1em 7em;
+    }
+
 }
 
 
@@ -164,6 +193,11 @@ body .about-page{
     .about-page .timeline-section .title-block .title {
         margin: 0;
         font-size: 1.7em;
+    }
+
+    #locationselector {
+        padding: 1em 5em;
+
     }
 
 }

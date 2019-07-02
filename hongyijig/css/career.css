@@ -125,6 +125,9 @@ body .career-page{
     text-decoration: none;
     width: 100%;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .career-page .career-block .card-header{
     border-radius: 0;
@@ -171,6 +174,13 @@ body .career-page{
         text-align: center;
     }
 
+    .career-page .career-block .btn-link span{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 260px;
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -182,5 +192,18 @@ body .career-page{
     .career-page .career-block .card-header {
         padding: .3em;
 
+    }
+}
+
+@media screen and (max-width: 768px){
+    #locationselector{
+        width: 100%;
+        padding: 1em 7em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #locationselector {
+        padding: 1em 5em;
     }
 }

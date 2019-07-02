@@ -30,14 +30,14 @@
 }
 
 #dates li {
-	list-style: none;
-	width: 100px;
-	height: 100px;
-	line-height: 100px;
-	font-size: 16px;
-	padding-left: 30px;
-	/*background: url(../img/timeline/biggerdot.png) left center no-repeat;*/
-	position: relative;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    line-height: 15px;
+    /* font-size: 16px; */
+    padding-left: 30px;
+    /* background: url(../img/timeline/biggerdot.png) left center no-repeat; */
+    position: relative;
 }
 
 #dates li:before{
@@ -52,7 +52,7 @@
 }
 
 #dates a {
-	line-height: 38px;
+	/*line-height: 38px;*/
 	padding-bottom: 10px;
 	color: #cac9c9;
 	text-decoration: none;
@@ -96,10 +96,12 @@
 
 #issues li h2 span:nth-of-type(3){
 	font-weight: 100;
+    color: var(--brand-color);
 }
 
 #issues li h2 span:nth-of-type(4){
 	font-weight: 100;
+    color: var(--brand-color);
 }
 
 
@@ -235,11 +237,20 @@
 		/* float: left; */
 		padding: 0;
 		margin-top: 0 !important;
-		position: relative;
+		/*position: relative;*/
 		padding-left: 15px;
 		transform: rotate(-90deg) translate(250%, 10%);
 		top: 0;
 		position: absolute;
 	}
+
+    #issues li h2{
+        font-size: 1.5em;
+    }
+
+    #dates li {
+        line-height: 100px;
+        transform: rotate(90deg);
+    }
 
 }

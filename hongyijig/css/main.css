@@ -84,7 +84,9 @@ header{
 }
 
 .logo{
-    margin-top: 1.5em;
+    margin-top: 1em;
+    width: 150px;
+
 }
 
 .main-nav li a{
@@ -1202,7 +1204,7 @@ header{
     padding: 10px 15px 14px;
     position: absolute;
     left: 180%;
-    top: 25%;
+    top: 0;
     width: 500px;
     line-height: 1.8em;
     height: 270px;
@@ -1211,8 +1213,8 @@ header{
 
 #boutique span h4{
     position: absolute;
-    left: 3%;
-    bottom: 25%;
+    /* left: 3%; */
+    bottom: 0;
     color: #f58023;
 }
 
@@ -1285,15 +1287,16 @@ header{
 
 
 .mobile-client-slider figure img{
-    height: 220px;
+    height: 250px;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
 .mobile-client-slider figcaption{
     padding: 1em;
-    height: 150px;
+    height: 200px;
     color: #fff;
+    font-size: .8em;
 }
 
 
@@ -1363,7 +1366,7 @@ header{
 
 .events-gallery{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto;
     grid-gap: 10px;
     margin-top: 3em;
 
@@ -1371,7 +1374,7 @@ header{
 
 .events-list{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 50% 50%;
     padding: 0;
     grid-gap: 3px;
 }
@@ -1389,6 +1392,7 @@ header{
 
 .events-list li figure img{
     max-width: 257px;
+    object-fit: cover;
 }
 
 .events-list li figure figcaption{
@@ -1399,7 +1403,7 @@ header{
 
 .gallery{
     display: grid;
-    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-columns: 25% 25% 25% 25%;
     padding: 0;
     grid-gap: 3px;
 }
@@ -1509,6 +1513,14 @@ header{
     .awards-list li img {
         margin: 1em auto;
         width: 75px !important;
+    }
+
+    .events-list{
+        display: block;
+    }
+
+    .gallery {
+        grid-template-columns: 33.3% 33.3% 33.3%;
     }
 
 }
@@ -1689,6 +1701,18 @@ footer a {
     content: "+";
     -webkit-animation: plus 0.8s;
     animation: plus 0.8s;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .footer-content.right{
+        padding-left: 2em;
+    }
+
+    .footer-content.center {
+        padding-left: 0;
+    }
+
 }
 
 
@@ -1880,6 +1904,25 @@ hr{
     position: absolute;
     background: url("//i.imgur.com/TxzC70f.png") no-repeat;
     cursor: pointer;
+}
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+    -ms-touch-action: auto;
+    touch-action: auto;
+}
+
+
+@media screen and (max-width: 768px){
+    #locationselector{
+        width: 100%;
+        padding: 1em 7em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #locationselector {
+        padding: 1em 5em;
+    }
 }
 
 
