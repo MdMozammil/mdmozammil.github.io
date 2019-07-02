@@ -136,6 +136,8 @@ body .about-page{
     color: var(--brand-color);
 }
 
+
+
 @media screen and (max-width: 1024px) {
     .about-page .team-list {
         grid-template-columns: 33% 33% 33%;
@@ -177,7 +179,138 @@ body .about-page{
         padding: 1em 7em;
     }
 
-}
+    /*Mobile Timeline*/
+
+    .mobile-timeline{
+        position: relative;
+    }
+
+    .mobile-timeline .tab-content{
+        text-align: center;
+        max-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2em 0;
+    }
+
+    .mobile-timeline .nav-tabs{
+        margin-top: 4em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mobile-timeline .nav-tabs li a {
+        text-transform: uppercase;
+    }
+
+    .mobile-timeline .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+        border: none;
+        border-bottom: 2px solid var(--yellow-color);
+        color: var(--yellow-color);
+    }
+
+    .mobile-timeline .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+        border: none;
+        border-bottom: 2px solid #2b84ee;
+    }
+
+
+    .mobile-timeline .nav-tabs .nav-link:hover{
+        border: none;
+        border-bottom: 2px solid #2b84ee;
+    }
+
+   .mobile-timeline .nav-tabs{
+        border: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-timeline .nav-item .nav-link {
+        border: none;
+        border-bottom: 2px solid #e9e9ea;
+        border-radius: 0;
+    }
+
+    .mobile-timeline .nav-item .nav-link{
+        border-bottom: 1px solid #e9e9ea;
+    }
+
+
+
+   .mobile-timeline .nav-tabs li:hover  li a:before {
+        content: '';
+        border-bottom: 3px solid var(--yellow-color);
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        z-index: 1;
+        height: 2px;
+        background-color: #000;
+        width: 100%;
+    }
+
+
+   .mobile-timeline  .nav-tabs{
+       justify-content: center;
+       border: none;
+       white-space: nowrap;
+       overflow: auto;
+       display: block;
+       /* position: fixed; */
+       background-color: #ffffff;
+       bottom: 0;
+       width: 100%;
+       left: 0;
+       right: 0;
+   }
+
+   .mobile-timeline .nav-tabs .nav-item {
+       display: inline-block;
+       line-height: 2em;
+   }
+
+
+    .mobile-timeline .nav-tabs:hover  li:not(:hover) {
+        text-decoration: none;
+        /*opacity: .3;*/
+        transition: all .5s ease-in-out;
+    }
+
+    .mobile-timeline h2{
+        font-size: 2em;
+        text-align: left;
+        color: #fff;
+    }
+
+    .mobile-timeline h2 span:nth-of-type(2){
+        color: var(--brand-color);
+        font-weight: 600;
+    }
+
+    .mobile-timeline h2 span:nth-of-type(3){
+        color: var(--brand-color);
+        font-weight: 100;
+
+    }
+
+    .mobile-timeline h2 span:nth-of-type(4){
+        color: var(--brand-color);
+        font-weight: 100;
+
+    }
+
+    .mobile-timeline p{
+        text-align: left;
+        color: #fff;
+    }
+
+
+
+    }
 
 
 @media screen and (max-width: 320px) {

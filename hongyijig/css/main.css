@@ -1797,6 +1797,7 @@ hr{
     opacity: 0;
     -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
     transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+    z-index: 10;
 }
 
 .cd-top.cd-top--show,
