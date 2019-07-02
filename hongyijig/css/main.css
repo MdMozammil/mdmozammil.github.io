@@ -871,6 +871,14 @@ header{
         padding: 1em 1em 10em 1em;
     }
 
+    .how-we-do .youtube-player{
+        height: auto !important;
+    }
+
+    .how-we-do .col-lg-12{
+        padding: 0;
+    }
+
 }
 
 /* ==========================================================================
@@ -1344,6 +1352,10 @@ header{
     max-width: 520px;
 }
 
+.position .title{
+    font-size: 2.5em;
+}
+
 .position h3{
     text-transform: uppercase;
 
@@ -1374,7 +1386,7 @@ header{
 
 .events-list{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto;
     padding: 0;
     grid-gap: 3px;
 }
@@ -1403,7 +1415,7 @@ header{
 
 .gallery{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 33.333% 33.333% 33.333%;
     padding: 0;
     grid-gap: 3px;
 }
@@ -1933,6 +1945,11 @@ hr{
 
 .border-0{
     border: none;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+    display: none;
 }
 
 @media only screen and (min-width: 769px) {
