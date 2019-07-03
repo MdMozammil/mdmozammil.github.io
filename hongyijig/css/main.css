@@ -1071,11 +1071,15 @@ header{
        margin: 0;
     }
 
-   .clients .title{
+   .position .title{
        margin-left: 0;
        margin-top: 0;
-       font-size: 2.5em;
+       font-size: 2em;
    }
+
+    .position .title br{
+        display: none;
+    }
 
     .clients-list{
         margin: 0;
@@ -1329,6 +1333,9 @@ header{
    ========================================================================== */
 .awards{
     padding: 5em 3em;
+    background: url("../img/award-bg.jpg") center no-repeat;
+    background-size: cover;
+    height: 766px;
 }
 
 .awards-list{
@@ -1345,6 +1352,28 @@ header{
     border: 2px solid #d7d7d7;
     padding: 3em 1em;
     height: 250px;
+    background-color: #fff;
+    position: relative;
+    transition: all .4s ease-in-out;
+}
+
+.awards-list li:hover .img-box img{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.awards-list li .img-box img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+    transform-origin: left;
 }
 
 .position{
@@ -1411,6 +1440,7 @@ header{
     background-color: #ebebeb;
     padding: 2em;
     text-align: left;
+    width: 100%;
 }
 
 .gallery{
@@ -1482,7 +1512,7 @@ header{
 
     .awards .title{
         margin: 0;
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .awards-list {
@@ -1546,6 +1576,12 @@ header{
 }
 
 
+/* ==========================================================================
+   Events
+   ========================================================================== */
+.events{
+    padding: 6em;
+}
 
 /* ==========================================================================
    Footer
