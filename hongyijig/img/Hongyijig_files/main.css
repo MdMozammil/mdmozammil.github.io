@@ -497,17 +497,6 @@ header{
     top: 0;
 }
 
-.vid-container:after{
-    content: "";
-    position: absolute;
-    background-color: #00000057;
-    top: -85px;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: calc(100vh - 0px);
-}
-
 #myVideo {
     position: absolute;
     right: 0;
@@ -569,18 +558,6 @@ header{
 
     .hero-text p {
         font-size: 1em;
-    }
-
-    .certificate {
-        top: 230px;
-        left: 31px;
-        position: absolute;
-        z-index: 11;
-        /* left: 0; */
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        height: -webkit-fill-available;
     }
 
 }
@@ -2000,10 +1977,6 @@ hr{
         width: 145px !important;
         font-size: .7em;
         margin: 1em auto;
-    }
-
-    .certificate{
-        display: none;
     }
 
 }
