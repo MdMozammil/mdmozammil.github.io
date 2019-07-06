@@ -81,6 +81,7 @@ header{
     top: 0;
     z-index: 150;
     width: 100%;
+    margin-top: 50px;
 }
 
 .logo{
@@ -626,6 +627,10 @@ header{
     line-height: 25px;
 }
 
+.img-text .honey-btn{
+    padding: 1.2em 3em;
+}
+
 .title{
     color: var(--brand-color);
     font-size: 3em;
@@ -942,7 +947,38 @@ header{
     font-weight: bold;
     line-height: 25px;
     margin: .3em 0 0 .1em;
+    position: relative;
 }
+
+/*.stats li figure figcaption h4:after{*/
+    /*content: "+";*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+/*}*/
+
+.stats li:nth-child(1) figure figcaption h4:after{
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: -27px;
+}
+
+.stats li:nth-child(2) figure figcaption h4:after{
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.stats li:nth-child(3) figure figcaption h4:after{
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+
 
 .stats li figure figcaption h4 span{
     font-size: .5em;
@@ -1017,6 +1053,11 @@ header{
     .cta {
         background-position-x: -42em;
     }
+
+    .modal-dialog {
+        max-width: 600px;
+        margin: 1.75rem auto;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1041,6 +1082,8 @@ header{
         margin-top: 4em;
 
     }
+
+
 
 }
 
@@ -1479,6 +1522,7 @@ header{
     visibility: hidden;
     transition: all .4s ease-in-out;
     transform-origin: left;
+    object-fit: cover;
 }
 
 .position{
@@ -2083,6 +2127,40 @@ hr{
     }
 }
 
+
+.cta-close{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--brand-color);
+    z-index: 100;
+
+}
+
+.cta-close a{
+    color: #fff;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.cta-close p{
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.close-cta{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: auto;
+    font-size: 22px;
+}
 
 /*Helper classes*/
 .white-c{

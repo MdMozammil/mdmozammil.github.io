@@ -454,3 +454,15 @@ $('.img-parallax').each(function(){
         }
     });
 });
+
+
+
+$(function () {
+    $('.cta-close').click(function () {
+        $(this).fadeOut('fast');
+        $('.main-nav').css({'margin-top': '0'});
+
+
+    })
+
+});
